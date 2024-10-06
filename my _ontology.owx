@@ -1,0 +1,1672 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding">
+    <Prefix name="" IRI="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="ontologybuilding" IRI="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#"/>
+    <Declaration>
+        <Class IRI="#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Al-Bahah_Province"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Al-Jawf_Province"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Al-Qassim_Province"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asir_Province"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Concert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CulturalFestival"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Desert_Safari"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Eastern_Province"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exhibition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FamilyWithKids"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flyboarding_sport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Golf_sport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hiking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Horse_riding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jazan_Province"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lakes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Makkah_Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medina_Province"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MuseumTour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Najran_Province"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalPlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Northern_Borders_Province"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oasis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReligiousEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rivers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Riyadh_region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Science"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Senior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SportsEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tabuk_Province"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Watersports"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YoungAdult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cultural"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#diving_sport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#regions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#religious"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tourism_places"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tourist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#url"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Religious_Ritual_(e.g.,_Hajj,_Umrah)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ḥa&apos;il_Province"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Adventures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Arts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Bodies_of_Water."/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Cosmic_interactions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Desert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Extensive_creativity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Green_spaces"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Historical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/IndustrialPlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Mountainous_area"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Shopping_Mall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SportsComplex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/island"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/museum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/resort"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasURL"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isprefer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#located_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#suitableFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#vistedby"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEntryFee"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/description_of_the_place"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/opening_hours_-_closing_hours"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/placeid"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/reviews"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Abu_Faramish"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Al-Ahsa_Oasis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Al-Bahah_Province"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Al-Bujairi_Park"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Al-Fanateer_Corniche"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Al-Fayrouz_Garden"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Al-Jawf_Province"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Al-Khafs_Meadow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Al-Madina_Museum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Al-Qassim_Province"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Al-Radf_Park"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Al-Soudah"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Al-Tayebat_Museum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Al_Disah_valley"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Al_Hada"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Al_Haram_mosque"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Al_Masmak_Palace_Museum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Al_Nakheel_Mall"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Al_Thumama__Park"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Al_Ula"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Al_Waaba_Crater"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aloqilat_Museum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arqana_desert"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Art_Zone_in_King_Abdullah_Economic_City"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asir_National_Park"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asir_Province"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Beit_Al-Sayegh_Arts_in_the_Red_Sea_Pearl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cablo_Equestrian_Club"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Camping"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cultural_Tour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dahna_Desert"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dar_Al-Madinah_Museum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Darat_Safeya_Bizagr"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dhi_Ain_village"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dirab_Golf_Club"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diriyah"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Eastern_Province"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Edge_of_the_World"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FamilyWithKids"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Farasan_Island"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Great_Nefud_Desert"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Green_Arts_Park"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hira_Cultural_District"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Intercontinental_Palms_Golf_Club"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jabal_Al_Leith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jazan_Province"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jubba_desert"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Juman_Park_in_King_Abdullah_Economic_City"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kaun_Workshop"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Khaybar_Fort"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Khor_Abhur_Beach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Khuraim_Meadow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#King_Abdulaziz_Center_for_World_Culture"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#King_Abdulaziz_Historical_Center"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lift_Saudi_Arabia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Makkah_Region"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mastodon_Cave"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Medina_Province"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MuseumTour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Naila_Art_Gallery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Najran_Province"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Namar_Dam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nassif_House_Museum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Night_Souq"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Northern_Borders_Province"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Noura_Meadow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nova_Resort"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Praya_Beach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Qaisariah_Souq"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Qara_Mountain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rijal_Almaa_Museum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Riyadh_region"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rose_City_Factory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rub_al_Khali_desert"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sahm_Al_Asayel_Equestrian_Stud"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Saqer-Aljazirah_Aviation_Museum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sarawat_Mountains"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Saudi_National_Museum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Scitech_Technology_Center"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Senior"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sharif_Museum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sharm_Abhur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shifa_Mountain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shipwreck_Island"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shubra_Palace"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sol_Resort"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tabuk_Castle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tabuk_Province"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wadi_Hanifa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wadi_Laban_Dam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Yam_Beach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Yanbu_Beach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#YoungAdult"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alhijr"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alhubi_Souq"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alnaif"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#khalid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ḥail_Province"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Al-Sumairi_Public_Park_(Green)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Four_Resort_(Ladies_Only)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ithra_(King_Abdulaziz_Center_for_World_Culture)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mada&apos;in_Saleh_(Hegra)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prophet&apos;s_Mosque"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rub&apos;_al_Khali"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://book.visitsaudi.com/sa-en/experiences/al-taif/Culture_History/unveil-the-unique-wonders-of-taif"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.visitsaudi.com/ar/qassim/attractions/al-oqilat-museum-in-qassim"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Al-Bahah_Province"/>
+        <Class IRI="#regions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Al-Jawf_Province"/>
+        <Class IRI="#regions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Al-Qassim_Province"/>
+        <Class IRI="#regions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asir_Province"/>
+        <Class IRI="#regions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Concert"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalFestival"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Desert_Safari"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diving"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eastern_Province"/>
+        <Class IRI="#regions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exhibition"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FamilyWithKids"/>
+        <Class IRI="#tourist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flyboarding_sport"/>
+        <Class IRI="/SportsComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forest"/>
+        <Class IRI="#NaturalPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Golf_sport"/>
+        <Class IRI="/SportsComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hiking"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Horse_riding"/>
+        <Class IRI="/SportsComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jazan_Province"/>
+        <Class IRI="#regions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lakes"/>
+        <Class IRI="/Bodies_of_Water."/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Makkah_Region"/>
+        <Class IRI="#regions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medina_Province"/>
+        <Class IRI="#regions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MuseumTour"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Najran_Province"/>
+        <Class IRI="#regions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalPlace"/>
+        <Class IRI="#tourism_places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Northern_Borders_Province"/>
+        <Class IRI="#regions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oasis"/>
+        <Class IRI="#NaturalPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReligiousEvent"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rivers"/>
+        <Class IRI="/Bodies_of_Water."/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Riyadh_region"/>
+        <Class IRI="#regions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Science"/>
+        <Class IRI="#tourism_places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seas"/>
+        <Class IRI="/Bodies_of_Water."/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Senior"/>
+        <Class IRI="#tourist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shopping"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SportsEvent"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tabuk_Province"/>
+        <Class IRI="#regions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Watersports"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YoungAdult"/>
+        <Class IRI="#tourist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cultural"/>
+        <Class IRI="#tourism_places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#diving_sport"/>
+        <Class IRI="/SportsComplex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#religious"/>
+        <Class IRI="#tourism_places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Religious_Ritual_(e.g.,_Hajj,_Umrah)"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ḥa&apos;il_Province"/>
+        <Class IRI="#regions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Adventures"/>
+        <Class IRI="#tourism_places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Arts"/>
+        <Class IRI="#tourism_places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Bodies_of_Water."/>
+        <Class IRI="#NaturalPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Cosmic_interactions"/>
+        <Class IRI="#tourism_places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Desert"/>
+        <Class IRI="#NaturalPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Extensive_creativity"/>
+        <Class IRI="#tourism_places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Green_spaces"/>
+        <Class IRI="#tourism_places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Historical"/>
+        <Class IRI="#tourism_places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/IndustrialPlace"/>
+        <Class IRI="#tourism_places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Mountainous_area"/>
+        <Class IRI="#NaturalPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Shopping_Mall"/>
+        <Class IRI="#tourism_places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SportsComplex"/>
+        <Class IRI="#tourism_places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/island"/>
+        <Class IRI="#NaturalPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/museum"/>
+        <Class IRI="#tourism_places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/resort"/>
+        <Class IRI="#tourism_places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#diving_sport"/>
+        <NamedIndividual IRI="#Abu_Faramish"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Bodies_of_Water."/>
+        <NamedIndividual IRI="#Abu_Faramish"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Oasis"/>
+        <NamedIndividual IRI="#Al-Ahsa_Oasis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#regions"/>
+        <NamedIndividual IRI="#Al-Bahah_Province"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Green_spaces"/>
+        <NamedIndividual IRI="#Al-Bujairi_Park"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Al-Bujairi_Park"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/museum"/>
+        <NamedIndividual IRI="#Al-Bujairi_Park"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Bodies_of_Water."/>
+        <NamedIndividual IRI="#Al-Fanateer_Corniche"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Green_spaces"/>
+        <NamedIndividual IRI="#Al-Fanateer_Corniche"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Green_spaces"/>
+        <NamedIndividual IRI="#Al-Fayrouz_Garden"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#regions"/>
+        <NamedIndividual IRI="#Al-Jawf_Province"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Desert"/>
+        <NamedIndividual IRI="#Al-Khafs_Meadow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Al-Madina_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/museum"/>
+        <NamedIndividual IRI="#Al-Madina_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#regions"/>
+        <NamedIndividual IRI="#Al-Qassim_Province"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Green_spaces"/>
+        <NamedIndividual IRI="#Al-Radf_Park"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Green_spaces"/>
+        <NamedIndividual IRI="#Al-Soudah"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Al-Tayebat_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/museum"/>
+        <NamedIndividual IRI="#Al-Tayebat_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Mountainous_area"/>
+        <NamedIndividual IRI="#Al_Disah_valley"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Mountainous_area"/>
+        <NamedIndividual IRI="#Al_Hada"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#religious"/>
+        <NamedIndividual IRI="#Al_Haram_mosque"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Al_Masmak_Palace_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/museum"/>
+        <NamedIndividual IRI="#Al_Masmak_Palace_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Shopping_Mall"/>
+        <NamedIndividual IRI="#Al_Nakheel_Mall"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Desert"/>
+        <NamedIndividual IRI="#Al_Thumama__Park"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Al_Ula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Mountainous_area"/>
+        <NamedIndividual IRI="#Al_Ula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Cosmic_interactions"/>
+        <NamedIndividual IRI="#Al_Waaba_Crater"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cultural"/>
+        <NamedIndividual IRI="#Aloqilat_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Aloqilat_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/museum"/>
+        <NamedIndividual IRI="#Aloqilat_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Desert"/>
+        <NamedIndividual IRI="#Arqana_desert"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Arts"/>
+        <NamedIndividual IRI="#Art_Zone_in_King_Abdullah_Economic_City"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Bodies_of_Water."/>
+        <NamedIndividual IRI="#Art_Zone_in_King_Abdullah_Economic_City"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Green_spaces"/>
+        <NamedIndividual IRI="#Art_Zone_in_King_Abdullah_Economic_City"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Forest"/>
+        <NamedIndividual IRI="#Asir_National_Park"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#regions"/>
+        <NamedIndividual IRI="#Asir_Province"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Arts"/>
+        <NamedIndividual IRI="#Beit_Al-Sayegh_Arts_in_the_Red_Sea_Pearl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horse_riding"/>
+        <NamedIndividual IRI="#Cablo_Equestrian_Club"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#Camping"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#Cultural_Tour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Desert"/>
+        <NamedIndividual IRI="#Dahna_Desert"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Arts"/>
+        <NamedIndividual IRI="#Dar_Al-Madinah_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Dar_Al-Madinah_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/museum"/>
+        <NamedIndividual IRI="#Dar_Al-Madinah_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Arts"/>
+        <NamedIndividual IRI="#Darat_Safeya_Bizagr"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Dhi_Ain_village"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Mountainous_area"/>
+        <NamedIndividual IRI="#Dhi_Ain_village"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Golf_sport"/>
+        <NamedIndividual IRI="#Dirab_Golf_Club"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Diriyah"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#regions"/>
+        <NamedIndividual IRI="#Eastern_Province"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Mountainous_area"/>
+        <NamedIndividual IRI="#Edge_of_the_World"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#tourist"/>
+        <NamedIndividual IRI="#FamilyWithKids"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/island"/>
+        <NamedIndividual IRI="#Farasan_Island"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Desert"/>
+        <NamedIndividual IRI="#Great_Nefud_Desert"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Green_spaces"/>
+        <NamedIndividual IRI="#Green_Arts_Park"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Hira_Cultural_District"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/museum"/>
+        <NamedIndividual IRI="#Hira_Cultural_District"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Golf_sport"/>
+        <NamedIndividual IRI="#Intercontinental_Palms_Golf_Club"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#diving_sport"/>
+        <NamedIndividual IRI="#Jabal_Al_Leith"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Bodies_of_Water."/>
+        <NamedIndividual IRI="#Jabal_Al_Leith"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#regions"/>
+        <NamedIndividual IRI="#Jazan_Province"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Desert"/>
+        <NamedIndividual IRI="#Jubba_desert"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Bodies_of_Water."/>
+        <NamedIndividual IRI="#Juman_Park_in_King_Abdullah_Economic_City"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Green_spaces"/>
+        <NamedIndividual IRI="#Juman_Park_in_King_Abdullah_Economic_City"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SportsComplex"/>
+        <NamedIndividual IRI="#Juman_Park_in_King_Abdullah_Economic_City"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Arts"/>
+        <NamedIndividual IRI="#Kaun_Workshop"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Khaybar_Fort"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Flyboarding_sport"/>
+        <NamedIndividual IRI="#Khor_Abhur_Beach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Bodies_of_Water."/>
+        <NamedIndividual IRI="#Khor_Abhur_Beach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Desert"/>
+        <NamedIndividual IRI="#Khuraim_Meadow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/museum"/>
+        <NamedIndividual IRI="#King_Abdulaziz_Center_for_World_Culture"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#King_Abdulaziz_Historical_Center"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/museum"/>
+        <NamedIndividual IRI="#King_Abdulaziz_Historical_Center"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Arts"/>
+        <NamedIndividual IRI="#Lift_Saudi_Arabia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#regions"/>
+        <NamedIndividual IRI="#Makkah_Region"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Mastodon_Cave"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#regions"/>
+        <NamedIndividual IRI="#Medina_Province"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Activity"/>
+        <NamedIndividual IRI="#MuseumTour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Arts"/>
+        <NamedIndividual IRI="#Naila_Art_Gallery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#regions"/>
+        <NamedIndividual IRI="#Najran_Province"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Bodies_of_Water."/>
+        <NamedIndividual IRI="#Namar_Dam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Green_spaces"/>
+        <NamedIndividual IRI="#Namar_Dam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Nassif_House_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/museum"/>
+        <NamedIndividual IRI="#Nassif_House_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Night_Souq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Shopping_Mall"/>
+        <NamedIndividual IRI="#Night_Souq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#regions"/>
+        <NamedIndividual IRI="#Northern_Borders_Province"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Desert"/>
+        <NamedIndividual IRI="#Noura_Meadow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/resort"/>
+        <NamedIndividual IRI="#Nova_Resort"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Flyboarding_sport"/>
+        <NamedIndividual IRI="#Praya_Beach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Bodies_of_Water."/>
+        <NamedIndividual IRI="#Praya_Beach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Qaisariah_Souq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Shopping_Mall"/>
+        <NamedIndividual IRI="#Qaisariah_Souq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Qara_Mountain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Mountainous_area"/>
+        <NamedIndividual IRI="#Qara_Mountain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cultural"/>
+        <NamedIndividual IRI="#Rijal_Almaa_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Arts"/>
+        <NamedIndividual IRI="#Rijal_Almaa_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Rijal_Almaa_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/museum"/>
+        <NamedIndividual IRI="#Rijal_Almaa_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#regions"/>
+        <NamedIndividual IRI="#Riyadh_region"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/IndustrialPlace"/>
+        <NamedIndividual IRI="#Rose_City_Factory"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Desert"/>
+        <NamedIndividual IRI="#Rub_al_Khali_desert"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horse_riding"/>
+        <NamedIndividual IRI="#Sahm_Al_Asayel_Equestrian_Stud"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Science"/>
+        <NamedIndividual IRI="#Saqer-Aljazirah_Aviation_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/museum"/>
+        <NamedIndividual IRI="#Saqer-Aljazirah_Aviation_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Mountainous_area"/>
+        <NamedIndividual IRI="#Sarawat_Mountains"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Saudi_National_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/museum"/>
+        <NamedIndividual IRI="#Saudi_National_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Science"/>
+        <NamedIndividual IRI="#Scitech_Technology_Center"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/museum"/>
+        <NamedIndividual IRI="#Scitech_Technology_Center"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#tourist"/>
+        <NamedIndividual IRI="#Senior"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Sharif_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/museum"/>
+        <NamedIndividual IRI="#Sharif_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#diving_sport"/>
+        <NamedIndividual IRI="#Sharm_Abhur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Bodies_of_Water."/>
+        <NamedIndividual IRI="#Sharm_Abhur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Mountainous_area"/>
+        <NamedIndividual IRI="#Shifa_Mountain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#diving_sport"/>
+        <NamedIndividual IRI="#Shipwreck_Island"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Bodies_of_Water."/>
+        <NamedIndividual IRI="#Shipwreck_Island"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cultural"/>
+        <NamedIndividual IRI="#Shubra_Palace"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Shubra_Palace"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/museum"/>
+        <NamedIndividual IRI="#Shubra_Palace"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Flyboarding_sport"/>
+        <NamedIndividual IRI="#Sol_Resort"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Bodies_of_Water."/>
+        <NamedIndividual IRI="#Sol_Resort"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/resort"/>
+        <NamedIndividual IRI="#Sol_Resort"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Tabuk_Castle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/museum"/>
+        <NamedIndividual IRI="#Tabuk_Castle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#regions"/>
+        <NamedIndividual IRI="#Tabuk_Province"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Bodies_of_Water."/>
+        <NamedIndividual IRI="#Wadi_Hanifa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Green_spaces"/>
+        <NamedIndividual IRI="#Wadi_Hanifa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Bodies_of_Water."/>
+        <NamedIndividual IRI="#Wadi_Laban_Dam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Green_spaces"/>
+        <NamedIndividual IRI="#Wadi_Laban_Dam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Bodies_of_Water."/>
+        <NamedIndividual IRI="#Yam_Beach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Green_spaces"/>
+        <NamedIndividual IRI="#Yam_Beach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#diving_sport"/>
+        <NamedIndividual IRI="#Yanbu_Beach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Bodies_of_Water."/>
+        <NamedIndividual IRI="#Yanbu_Beach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#tourist"/>
+        <NamedIndividual IRI="#YoungAdult"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#alhijr"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#alhubi_Souq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Shopping_Mall"/>
+        <NamedIndividual IRI="#alhubi_Souq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#tourist"/>
+        <NamedIndividual IRI="#alnaif"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#tourist"/>
+        <NamedIndividual IRI="#khalid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#regions"/>
+        <NamedIndividual IRI="#Ḥail_Province"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Green_spaces"/>
+        <NamedIndividual IRI="#Al-Sumairi_Public_Park_(Green)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/resort"/>
+        <NamedIndividual IRI="#Four_Resort_(Ladies_Only)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/museum"/>
+        <NamedIndividual IRI="#Ithra_(King_Abdulaziz_Center_for_World_Culture)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Historical"/>
+        <NamedIndividual IRI="#Mada&apos;in_Saleh_(Hegra)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#religious"/>
+        <NamedIndividual IRI="#Prophet&apos;s_Mosque"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Desert"/>
+        <NamedIndividual IRI="#Rub&apos;_al_Khali"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#url"/>
+        <NamedIndividual IRI="https://book.visitsaudi.com/sa-en/experiences/al-taif/Culture_History/unveil-the-unique-wonders-of-taif"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#url"/>
+        <NamedIndividual IRI="https://www.visitsaudi.com/ar/qassim/attractions/al-oqilat-museum-in-qassim"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#alnaif"/>
+        <NamedIndividual IRI="#khalid"/>
+    </SameIndividual>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActivity"/>
+        <NamedIndividual IRI="#Al-Bujairi_Park"/>
+        <NamedIndividual IRI="#Cultural_Tour"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActivity"/>
+        <NamedIndividual IRI="#Aloqilat_Museum"/>
+        <NamedIndividual IRI="#Cultural_Tour"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Aloqilat_Museum"/>
+        <NamedIndividual IRI="#Al-Qassim_Province"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#suitableFor"/>
+        <NamedIndividual IRI="#Aloqilat_Museum"/>
+        <NamedIndividual IRI="#FamilyWithKids"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActivity"/>
+        <NamedIndividual IRI="#MuseumTour"/>
+        <NamedIndividual IRI="#MuseumTour"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActivity"/>
+        <NamedIndividual IRI="#Rijal_Almaa_Museum"/>
+        <NamedIndividual IRI="#Cultural_Tour"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Rijal_Almaa_Museum"/>
+        <NamedIndividual IRI="#Asir_Province"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#suitableFor"/>
+        <NamedIndividual IRI="#Rijal_Almaa_Museum"/>
+        <NamedIndividual IRI="#FamilyWithKids"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActivity"/>
+        <NamedIndividual IRI="#Shubra_Palace"/>
+        <NamedIndividual IRI="#Cultural_Tour"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#Shubra_Palace"/>
+        <NamedIndividual IRI="#Al-Qassim_Province"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#suitableFor"/>
+        <NamedIndividual IRI="#Shubra_Palace"/>
+        <NamedIndividual IRI="#FamilyWithKids"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isprefer"/>
+        <NamedIndividual IRI="#khalid"/>
+        <NamedIndividual IRI="#Al-Bujairi_Park"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasURL"/>
+        <NamedIndividual IRI="https://book.visitsaudi.com/sa-en/experiences/al-taif/Culture_History/unveil-the-unique-wonders-of-taif"/>
+        <NamedIndividual IRI="https://book.visitsaudi.com/sa-en/experiences/al-taif/Culture_History/unveil-the-unique-wonders-of-taif"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasURL"/>
+        <NamedIndividual IRI="https://www.visitsaudi.com/ar/qassim/attractions/al-oqilat-museum-in-qassim"/>
+        <NamedIndividual IRI="https://www.visitsaudi.com/ar/qassim/attractions/al-oqilat-museum-in-qassim"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntryFee"/>
+        <NamedIndividual IRI="#Aloqilat_Museum"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/address"/>
+        <NamedIndividual IRI="#Aloqilat_Museum"/>
+        <Literal>FREWGTREA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/name"/>
+        <NamedIndividual IRI="#Aloqilat_Museum"/>
+        <Literal>DdFWWF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/name"/>
+        <NamedIndividual IRI="#Khor_Abhur_Beach"/>
+        <Literal>Khor Abhur Beach in South Abhur in Jeddah</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntryFee"/>
+        <NamedIndividual IRI="#MuseumTour"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/address"/>
+        <NamedIndividual IRI="#MuseumTour"/>
+        <Literal>lkhsajgoj</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntryFee"/>
+        <NamedIndividual IRI="#Rijal_Almaa_Museum"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/address"/>
+        <NamedIndividual IRI="#Rijal_Almaa_Museum"/>
+        <Literal>CZSCCCCCCDSV</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/name"/>
+        <NamedIndividual IRI="#Rijal_Almaa_Museum"/>
+        <Literal>SQDW</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/description_of_the_place"/>
+        <NamedIndividual IRI="#khalid"/>
+        <Literal>jbkhfdoWJOGJ{owj{ip</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/name"/>
+        <NamedIndividual IRI="#khalid"/>
+        <Literal>albjari street</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isprefer"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#located_in"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#suitableFor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasActivity"/>
+        <Class IRI="#tourism_places"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasURL"/>
+        <Class IRI="#url"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isprefer"/>
+        <Class IRI="#tourist"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#located_in"/>
+        <Class IRI="#tourism_places"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#suitableFor"/>
+        <Class IRI="#tourism_places"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#vistedby"/>
+        <Class IRI="#tourism_places"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasActivity"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasURL"/>
+        <Class IRI="#tourism_places"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isprefer"/>
+        <Class IRI="#tourism_places"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#located_in"/>
+        <Class IRI="#regions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#suitableFor"/>
+        <Class IRI="#tourist"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#vistedby"/>
+        <Class IRI="#tourist"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEntryFee"/>
+        <Class IRI="#cultural"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEntryFee"/>
+        <Class IRI="#tourism_places"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/address"/>
+        <Class IRI="#cultural"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/address"/>
+        <Class IRI="#tourism_places"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/description_of_the_place"/>
+        <Class IRI="#tourism_places"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/name"/>
+        <Class IRI="#cultural"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/name"/>
+        <Class IRI="#tourism_places"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/opening_hours_-_closing_hours"/>
+        <Class IRI="#tourism_places"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/placeid"/>
+        <Class IRI="#tourism_places"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/reviews"/>
+        <Class IRI="#tourism_places"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEntryFee"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/address"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/description_of_the_place"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/name"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/opening_hours_-_closing_hours"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/placeid"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/reviews"/>
+        <Datatype abbreviatedIRI="xsd:token"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasEntryFee</IRI>
+        <Literal>hasEntryFee</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/address</IRI>
+        <Literal>hasAddress</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/name</IRI>
+        <Literal>hasName</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

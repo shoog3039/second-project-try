@@ -1,0 +1,132 @@
+<style>
+/* General Page Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+}
+
+/* Center the main alert heading and add some padding */
+.alert-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #155724;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px; /* Restricting card width to be smaller */
+    margin: 0 auto;   /* Center the card horizontally */
+}
+
+/* Add a smooth shadow when hovering over the cards */
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Custom Header for Card */
+.card-header {
+    background-color: #9c6db3;
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+}
+
+/* Card Body */
+.card-body {
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.card-body h6 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.card-body p {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Card Footer */
+.card-footer {
+    background-color: #f1f1f1;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Customize Badge for Event Label */
+.badge {
+    background-color: transparent !important;
+    color: #e9e0e0; /* You can set this to any color */
+     /* Optional: Add a border for a cleaner look */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* No Events Alert */
+.alert-warning {
+    font-size: 1.1rem;
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+</style>
+<div class="container d-flex justify-content-center align-items-center mt-4"> 
+    <div class="alert alert-success text-center" role="alert">
+       
+    </div>
+</div>
+
+<div class="row mt-4">
+    {% if event_data %}
+        {% for event in event_data %}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    <br> 
+                    <span class="badge rounded-pill text-bg-success">{{ event.event }}</span>
+                </div>
+                <div class="card-body">
+                    <h6 class="card-title">Event Type:</h6> 
+                    <p>{{ event.eventType }}</p>
+                    <h6 class="card-text">Located in</h6>
+                    <p>{{ event.regions }}</p>
+                    <h6 class="card-text">Event Dates</h6>
+                    <p>{{ event.timeofevent }}</p>
+                    <h6 class="card-text">Entry Fee:</h6> 
+                    <p>{{ event.fee }}</p> 
+                </div>
+                <div class="card-footer text-muted">
+                    Explore the beauty of  
+                    <a href="https://www.google.com/search?q={{ event.event }}" target="_blank">
+                        {{ event.event }}
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    {% else %}
+    <div class="alert alert-warning text-center" role="alert">
+        <h4 class="alert-heading">No events found for your selection.</h4>
+    </div>
+    {% endif %}
+</div>

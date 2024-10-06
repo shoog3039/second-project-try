@@ -1,0 +1,1027 @@
+@prefix : <http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ontologybuilding: <http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#> .
+@base <http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/> .
+
+<http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#hasActivity
+ontologybuilding:hasActivity rdf:type owl:ObjectProperty ;
+                             rdfs:domain ontologybuilding:tourism_places ;
+                             rdfs:range ontologybuilding:Activity .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#hasURL
+ontologybuilding:hasURL rdf:type owl:ObjectProperty ;
+                        rdfs:domain ontologybuilding:url ;
+                        rdfs:range ontologybuilding:tourism_places .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#isprefer
+ontologybuilding:isprefer rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf owl:topObjectProperty ;
+                          rdfs:domain ontologybuilding:tourist ;
+                          rdfs:range ontologybuilding:tourism_places .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#located_in
+ontologybuilding:located_in rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf owl:topObjectProperty ;
+                            rdfs:domain ontologybuilding:tourism_places ;
+                            rdfs:range ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#suitableFor
+ontologybuilding:suitableFor rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf owl:topObjectProperty ;
+                             rdfs:domain ontologybuilding:tourism_places ;
+                             rdfs:range ontologybuilding:tourist .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#vistedby
+ontologybuilding:vistedby rdf:type owl:ObjectProperty ;
+                          rdfs:domain ontologybuilding:tourism_places ;
+                          rdfs:range ontologybuilding:tourist .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#hasEntryFee
+ontologybuilding:hasEntryFee rdf:type owl:DatatypeProperty ;
+                             rdfs:domain ontologybuilding:cultural ,
+                                         ontologybuilding:tourism_places ;
+                             rdfs:range xsd:int ;
+                             rdfs:label "hasEntryFee" .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/address
+:address rdf:type owl:DatatypeProperty ;
+         rdfs:domain ontologybuilding:cultural ,
+                     ontologybuilding:tourism_places ;
+         rdfs:range xsd:string ;
+         rdfs:label "hasAddress" .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/description_of_the_place
+:description_of_the_place rdf:type owl:DatatypeProperty ;
+                          rdfs:domain ontologybuilding:tourism_places ;
+                          rdfs:range rdf:langString .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain ontologybuilding:cultural ,
+                  ontologybuilding:tourism_places ;
+      rdfs:range rdf:langString ;
+      rdfs:label "hasName" .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/opening_hours_-_closing_hours
+:opening_hours_-_closing_hours rdf:type owl:DatatypeProperty ;
+                               rdfs:domain ontologybuilding:tourism_places ;
+                               rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/placeid
+:placeid rdf:type owl:DatatypeProperty ;
+         rdfs:domain ontologybuilding:tourism_places ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/reviews
+:reviews rdf:type owl:DatatypeProperty ;
+         rdfs:domain ontologybuilding:tourism_places ;
+         rdfs:range xsd:token .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity
+ontologybuilding:Activity rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Bahah_Province
+ontologybuilding:Al-Bahah_Province rdf:type owl:Class ;
+                                   rdfs:subClassOf ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Jawf_Province
+ontologybuilding:Al-Jawf_Province rdf:type owl:Class ;
+                                  rdfs:subClassOf ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Qassim_Province
+ontologybuilding:Al-Qassim_Province rdf:type owl:Class ;
+                                    rdfs:subClassOf ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Asir_Province
+ontologybuilding:Asir_Province rdf:type owl:Class ;
+                               rdfs:subClassOf ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Concert
+ontologybuilding:Concert rdf:type owl:Class ;
+                         rdfs:subClassOf ontologybuilding:Event .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#CulturalFestival
+ontologybuilding:CulturalFestival rdf:type owl:Class ;
+                                  rdfs:subClassOf ontologybuilding:Event .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Desert_Safari
+ontologybuilding:Desert_Safari rdf:type owl:Class ;
+                               rdfs:subClassOf ontologybuilding:Activity .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Diving
+ontologybuilding:Diving rdf:type owl:Class ;
+                        rdfs:subClassOf ontologybuilding:Activity .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Eastern_Province
+ontologybuilding:Eastern_Province rdf:type owl:Class ;
+                                  rdfs:subClassOf ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Event
+ontologybuilding:Event rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Exhibition
+ontologybuilding:Exhibition rdf:type owl:Class ;
+                            rdfs:subClassOf ontologybuilding:Event .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids
+ontologybuilding:FamilyWithKids rdf:type owl:Class ;
+                                rdfs:subClassOf ontologybuilding:tourist .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Flyboarding_sport
+ontologybuilding:Flyboarding_sport rdf:type owl:Class ;
+                                   rdfs:subClassOf :SportsComplex .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Forest
+ontologybuilding:Forest rdf:type owl:Class ;
+                        rdfs:subClassOf ontologybuilding:NaturalPlace .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Golf_sport
+ontologybuilding:Golf_sport rdf:type owl:Class ;
+                            rdfs:subClassOf :SportsComplex .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Hiking
+ontologybuilding:Hiking rdf:type owl:Class ;
+                        rdfs:subClassOf ontologybuilding:Activity .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Horse_riding
+ontologybuilding:Horse_riding rdf:type owl:Class ;
+                              rdfs:subClassOf :SportsComplex .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Jazan_Province
+ontologybuilding:Jazan_Province rdf:type owl:Class ;
+                                rdfs:subClassOf ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Lakes
+ontologybuilding:Lakes rdf:type owl:Class ;
+                       rdfs:subClassOf <http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water.> .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region
+ontologybuilding:Makkah_Region rdf:type owl:Class ;
+                               rdfs:subClassOf ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Medina_Province
+ontologybuilding:Medina_Province rdf:type owl:Class ;
+                                 rdfs:subClassOf ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour
+ontologybuilding:MuseumTour rdf:type owl:Class ;
+                            rdfs:subClassOf ontologybuilding:Activity .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Najran_Province
+ontologybuilding:Najran_Province rdf:type owl:Class ;
+                                 rdfs:subClassOf ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#NaturalPlace
+ontologybuilding:NaturalPlace rdf:type owl:Class ;
+                              rdfs:subClassOf ontologybuilding:tourism_places .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Northern_Borders_Province
+ontologybuilding:Northern_Borders_Province rdf:type owl:Class ;
+                                           rdfs:subClassOf ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Oasis
+ontologybuilding:Oasis rdf:type owl:Class ;
+                       rdfs:subClassOf ontologybuilding:NaturalPlace .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#ReligiousEvent
+ontologybuilding:ReligiousEvent rdf:type owl:Class ;
+                                rdfs:subClassOf ontologybuilding:Event .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Rivers
+ontologybuilding:Rivers rdf:type owl:Class ;
+                        rdfs:subClassOf <http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water.> .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region
+ontologybuilding:Riyadh_region rdf:type owl:Class ;
+                               rdfs:subClassOf ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Science
+ontologybuilding:Science rdf:type owl:Class ;
+                         rdfs:subClassOf ontologybuilding:tourism_places .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Seas
+ontologybuilding:Seas rdf:type owl:Class ;
+                      rdfs:subClassOf <http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water.> .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Senior
+ontologybuilding:Senior rdf:type owl:Class ;
+                        rdfs:subClassOf ontologybuilding:tourist .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Shopping
+ontologybuilding:Shopping rdf:type owl:Class ;
+                          rdfs:subClassOf ontologybuilding:Activity .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#SportsEvent
+ontologybuilding:SportsEvent rdf:type owl:Class ;
+                             rdfs:subClassOf ontologybuilding:Event .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Tabuk_Province
+ontologybuilding:Tabuk_Province rdf:type owl:Class ;
+                                rdfs:subClassOf ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Watersports
+ontologybuilding:Watersports rdf:type owl:Class ;
+                             rdfs:subClassOf ontologybuilding:Activity .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#YoungAdult
+ontologybuilding:YoungAdult rdf:type owl:Class ;
+                            rdfs:subClassOf ontologybuilding:tourist .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#cultural
+ontologybuilding:cultural rdf:type owl:Class ;
+                          rdfs:subClassOf ontologybuilding:tourism_places .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#diving_sport
+ontologybuilding:diving_sport rdf:type owl:Class ;
+                              rdfs:subClassOf :SportsComplex .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#regions
+ontologybuilding:regions rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#religious
+ontologybuilding:religious rdf:type owl:Class ;
+                           rdfs:subClassOf ontologybuilding:tourism_places .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places
+ontologybuilding:tourism_places rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourist
+ontologybuilding:tourist rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#url
+ontologybuilding:url rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Religious_Ritual_(e.g.,_Hajj,_Umrah)
+<http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Religious_Ritual_(e.g.,_Hajj,_Umrah)> rdf:type owl:Class ;
+                                                                                                                   rdfs:subClassOf ontologybuilding:Activity .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Ḥa'il_Province
+<http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Ḥa'il_Province> rdf:type owl:Class ;
+                                                                                             rdfs:subClassOf ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Adventures
+:Adventures rdf:type owl:Class ;
+            rdfs:subClassOf ontologybuilding:tourism_places .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Arts
+:Arts rdf:type owl:Class ;
+      rdfs:subClassOf ontologybuilding:tourism_places .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water.
+<http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water.> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf ontologybuilding:NaturalPlace .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Cosmic_interactions
+:Cosmic_interactions rdf:type owl:Class ;
+                     rdfs:subClassOf ontologybuilding:tourism_places .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Desert
+:Desert rdf:type owl:Class ;
+        rdfs:subClassOf ontologybuilding:NaturalPlace .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Extensive_creativity
+:Extensive_creativity rdf:type owl:Class ;
+                      rdfs:subClassOf ontologybuilding:tourism_places .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Green_spaces
+:Green_spaces rdf:type owl:Class ;
+              rdfs:subClassOf ontologybuilding:tourism_places .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical
+:Historical rdf:type owl:Class ;
+            rdfs:subClassOf ontologybuilding:tourism_places .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/IndustrialPlace
+:IndustrialPlace rdf:type owl:Class ;
+                 rdfs:subClassOf ontologybuilding:tourism_places .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Mountainous_area
+:Mountainous_area rdf:type owl:Class ;
+                  rdfs:subClassOf ontologybuilding:NaturalPlace .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Shopping_Mall
+:Shopping_Mall rdf:type owl:Class ;
+               rdfs:subClassOf ontologybuilding:tourism_places .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/SportsComplex
+:SportsComplex rdf:type owl:Class ;
+               rdfs:subClassOf ontologybuilding:tourism_places .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/island
+:island rdf:type owl:Class ;
+        rdfs:subClassOf ontologybuilding:NaturalPlace .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/museum
+:museum rdf:type owl:Class ;
+        rdfs:subClassOf ontologybuilding:tourism_places .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/resort
+:resort rdf:type owl:Class ;
+        rdfs:subClassOf ontologybuilding:tourism_places .
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdfs:subClassOf owl:Thing .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Abu_Faramish
+ontologybuilding:Abu_Faramish rdf:type owl:NamedIndividual ,
+                                       ontologybuilding:diving_sport ,
+                                       <http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water.> .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Ahsa_Oasis
+ontologybuilding:Al-Ahsa_Oasis rdf:type owl:NamedIndividual ,
+                                        ontologybuilding:Oasis .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Bahah_Province
+ontologybuilding:Al-Bahah_Province rdf:type owl:NamedIndividual ,
+                                            ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Bujairi_Park
+ontologybuilding:Al-Bujairi_Park rdf:type owl:NamedIndividual ,
+                                          :Green_spaces ,
+                                          :Historical ,
+                                          :museum ;
+                                 ontologybuilding:hasActivity ontologybuilding:Cultural_Tour .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Fanateer_Corniche
+ontologybuilding:Al-Fanateer_Corniche rdf:type owl:NamedIndividual ,
+                                               <http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water.> ,
+                                               :Green_spaces .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Fayrouz_Garden
+ontologybuilding:Al-Fayrouz_Garden rdf:type owl:NamedIndividual ,
+                                            :Green_spaces .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Jawf_Province
+ontologybuilding:Al-Jawf_Province rdf:type owl:NamedIndividual ,
+                                           ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Khafs_Meadow
+ontologybuilding:Al-Khafs_Meadow rdf:type owl:NamedIndividual ,
+                                          :Desert .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Madina_Museum
+ontologybuilding:Al-Madina_Museum rdf:type owl:NamedIndividual ,
+                                           :Historical ,
+                                           :museum .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Qassim_Province
+ontologybuilding:Al-Qassim_Province rdf:type owl:NamedIndividual ,
+                                             ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Radf_Park
+ontologybuilding:Al-Radf_Park rdf:type owl:NamedIndividual ,
+                                       :Green_spaces .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Soudah
+ontologybuilding:Al-Soudah rdf:type owl:NamedIndividual ,
+                                    :Green_spaces .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Tayebat_Museum
+ontologybuilding:Al-Tayebat_Museum rdf:type owl:NamedIndividual ,
+                                            :Historical ,
+                                            :museum .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Disah_valley
+ontologybuilding:Al_Disah_valley rdf:type owl:NamedIndividual ,
+                                          :Mountainous_area .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Hada
+ontologybuilding:Al_Hada rdf:type owl:NamedIndividual ,
+                                  :Mountainous_area .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Haram_mosque
+ontologybuilding:Al_Haram_mosque rdf:type owl:NamedIndividual ,
+                                          ontologybuilding:religious .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Masmak_Palace_Museum
+ontologybuilding:Al_Masmak_Palace_Museum rdf:type owl:NamedIndividual ,
+                                                  :Historical ,
+                                                  :museum .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Nakheel_Mall
+ontologybuilding:Al_Nakheel_Mall rdf:type owl:NamedIndividual ,
+                                          :Shopping_Mall .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Thumama__Park
+ontologybuilding:Al_Thumama__Park rdf:type owl:NamedIndividual ,
+                                           :Desert .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Ula
+ontologybuilding:Al_Ula rdf:type owl:NamedIndividual ,
+                                 :Historical ,
+                                 :Mountainous_area .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Waaba_Crater
+ontologybuilding:Al_Waaba_Crater rdf:type owl:NamedIndividual ,
+                                          :Cosmic_interactions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Aloqilat_Museum
+ontologybuilding:Aloqilat_Museum rdf:type owl:NamedIndividual ,
+                                          ontologybuilding:cultural ,
+                                          :Historical ,
+                                          :museum ;
+                                 ontologybuilding:hasActivity ontologybuilding:Cultural_Tour ;
+                                 ontologybuilding:located_in ontologybuilding:Al-Qassim_Province ;
+                                 ontologybuilding:suitableFor ontologybuilding:FamilyWithKids ;
+                                 ontologybuilding:hasEntryFee 3 ;
+                                 :address "FREWGTREA" ;
+                                 :name "DdFWWF" .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Arqana_desert
+ontologybuilding:Arqana_desert rdf:type owl:NamedIndividual ,
+                                        :Desert .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Art_Zone_in_King_Abdullah_Economic_City
+ontologybuilding:Art_Zone_in_King_Abdullah_Economic_City rdf:type owl:NamedIndividual ,
+                                                                  :Arts ,
+                                                                  <http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water.> ,
+                                                                  :Green_spaces .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Asir_National_Park
+ontologybuilding:Asir_National_Park rdf:type owl:NamedIndividual ,
+                                             ontologybuilding:Forest .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Asir_Province
+ontologybuilding:Asir_Province rdf:type owl:NamedIndividual ,
+                                        ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Beit_Al-Sayegh_Arts_in_the_Red_Sea_Pearl
+ontologybuilding:Beit_Al-Sayegh_Arts_in_the_Red_Sea_Pearl rdf:type owl:NamedIndividual ,
+                                                                   :Arts .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Cablo_Equestrian_Club
+ontologybuilding:Cablo_Equestrian_Club rdf:type owl:NamedIndividual ,
+                                                ontologybuilding:Horse_riding .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Camping
+ontologybuilding:Camping rdf:type owl:NamedIndividual ,
+                                  ontologybuilding:Activity .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Cultural_Tour
+ontologybuilding:Cultural_Tour rdf:type owl:NamedIndividual ,
+                                        ontologybuilding:Activity .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Dahna_Desert
+ontologybuilding:Dahna_Desert rdf:type owl:NamedIndividual ,
+                                       :Desert .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Dar_Al-Madinah_Museum
+ontologybuilding:Dar_Al-Madinah_Museum rdf:type owl:NamedIndividual ,
+                                                :Arts ,
+                                                :Historical ,
+                                                :museum .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Darat_Safeya_Bizagr
+ontologybuilding:Darat_Safeya_Bizagr rdf:type owl:NamedIndividual ,
+                                              :Arts .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Dhi_Ain_village
+ontologybuilding:Dhi_Ain_village rdf:type owl:NamedIndividual ,
+                                          :Historical ,
+                                          :Mountainous_area .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Dirab_Golf_Club
+ontologybuilding:Dirab_Golf_Club rdf:type owl:NamedIndividual ,
+                                          ontologybuilding:Golf_sport .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Diriyah
+ontologybuilding:Diriyah rdf:type owl:NamedIndividual ,
+                                  :Historical .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Eastern_Province
+ontologybuilding:Eastern_Province rdf:type owl:NamedIndividual ,
+                                           ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Edge_of_the_World
+ontologybuilding:Edge_of_the_World rdf:type owl:NamedIndividual ,
+                                            :Mountainous_area .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids
+ontologybuilding:FamilyWithKids rdf:type owl:NamedIndividual ,
+                                         ontologybuilding:tourist .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Farasan_Island
+ontologybuilding:Farasan_Island rdf:type owl:NamedIndividual ,
+                                         :island .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Great_Nefud_Desert
+ontologybuilding:Great_Nefud_Desert rdf:type owl:NamedIndividual ,
+                                             :Desert .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Green_Arts_Park
+ontologybuilding:Green_Arts_Park rdf:type owl:NamedIndividual ,
+                                          :Green_spaces .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Hira_Cultural_District
+ontologybuilding:Hira_Cultural_District rdf:type owl:NamedIndividual ,
+                                                 :Historical ,
+                                                 :museum .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Intercontinental_Palms_Golf_Club
+ontologybuilding:Intercontinental_Palms_Golf_Club rdf:type owl:NamedIndividual ,
+                                                           ontologybuilding:Golf_sport .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Jabal_Al_Leith
+ontologybuilding:Jabal_Al_Leith rdf:type owl:NamedIndividual ,
+                                         ontologybuilding:diving_sport ,
+                                         <http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water.> .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Jazan_Province
+ontologybuilding:Jazan_Province rdf:type owl:NamedIndividual ,
+                                         ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Jubba_desert
+ontologybuilding:Jubba_desert rdf:type owl:NamedIndividual ,
+                                       :Desert .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Juman_Park_in_King_Abdullah_Economic_City
+ontologybuilding:Juman_Park_in_King_Abdullah_Economic_City rdf:type owl:NamedIndividual ,
+                                                                    <http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water.> ,
+                                                                    :Green_spaces ,
+                                                                    :SportsComplex .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Kaun_Workshop
+ontologybuilding:Kaun_Workshop rdf:type owl:NamedIndividual ,
+                                        :Arts .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Khaybar_Fort
+ontologybuilding:Khaybar_Fort rdf:type owl:NamedIndividual ,
+                                       :Historical .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Khor_Abhur_Beach
+ontologybuilding:Khor_Abhur_Beach rdf:type owl:NamedIndividual ,
+                                           ontologybuilding:Flyboarding_sport ,
+                                           <http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water.> ;
+                                  :name "Khor Abhur Beach in South Abhur in Jeddah" .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Khuraim_Meadow
+ontologybuilding:Khuraim_Meadow rdf:type owl:NamedIndividual ,
+                                         :Desert .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#King_Abdulaziz_Center_for_World_Culture
+ontologybuilding:King_Abdulaziz_Center_for_World_Culture rdf:type owl:NamedIndividual ,
+                                                                  :museum .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#King_Abdulaziz_Historical_Center
+ontologybuilding:King_Abdulaziz_Historical_Center rdf:type owl:NamedIndividual ,
+                                                           :Historical ,
+                                                           :museum .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Lift_Saudi_Arabia
+ontologybuilding:Lift_Saudi_Arabia rdf:type owl:NamedIndividual ,
+                                            :Arts .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region
+ontologybuilding:Makkah_Region rdf:type owl:NamedIndividual ,
+                                        ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Mastodon_Cave
+ontologybuilding:Mastodon_Cave rdf:type owl:NamedIndividual ,
+                                        :Historical .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Medina_Province
+ontologybuilding:Medina_Province rdf:type owl:NamedIndividual ,
+                                          ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour
+ontologybuilding:MuseumTour rdf:type owl:NamedIndividual ,
+                                     ontologybuilding:Activity ;
+                            ontologybuilding:hasActivity ontologybuilding:MuseumTour ;
+                            ontologybuilding:hasEntryFee 0 ;
+                            :address "lkhsajgoj" .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Naila_Art_Gallery
+ontologybuilding:Naila_Art_Gallery rdf:type owl:NamedIndividual ,
+                                            :Arts .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Najran_Province
+ontologybuilding:Najran_Province rdf:type owl:NamedIndividual ,
+                                          ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Namar_Dam
+ontologybuilding:Namar_Dam rdf:type owl:NamedIndividual ,
+                                    <http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water.> ,
+                                    :Green_spaces .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Nassif_House_Museum
+ontologybuilding:Nassif_House_Museum rdf:type owl:NamedIndividual ,
+                                              :Historical ,
+                                              :museum .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Night_Souq
+ontologybuilding:Night_Souq rdf:type owl:NamedIndividual ,
+                                     :Historical ,
+                                     :Shopping_Mall .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Northern_Borders_Province
+ontologybuilding:Northern_Borders_Province rdf:type owl:NamedIndividual ,
+                                                    ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Noura_Meadow
+ontologybuilding:Noura_Meadow rdf:type owl:NamedIndividual ,
+                                       :Desert .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Nova_Resort
+ontologybuilding:Nova_Resort rdf:type owl:NamedIndividual ,
+                                      :resort .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Praya_Beach
+ontologybuilding:Praya_Beach rdf:type owl:NamedIndividual ,
+                                      ontologybuilding:Flyboarding_sport ,
+                                      <http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water.> .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Qaisariah_Souq
+ontologybuilding:Qaisariah_Souq rdf:type owl:NamedIndividual ,
+                                         :Historical ,
+                                         :Shopping_Mall .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Qara_Mountain
+ontologybuilding:Qara_Mountain rdf:type owl:NamedIndividual ,
+                                        :Historical ,
+                                        :Mountainous_area .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Rijal_Almaa_Museum
+ontologybuilding:Rijal_Almaa_Museum rdf:type owl:NamedIndividual ,
+                                             ontologybuilding:cultural ,
+                                             :Arts ,
+                                             :Historical ,
+                                             :museum ;
+                                    ontologybuilding:hasActivity ontologybuilding:Cultural_Tour ;
+                                    ontologybuilding:located_in ontologybuilding:Asir_Province ;
+                                    ontologybuilding:suitableFor ontologybuilding:FamilyWithKids ;
+                                    ontologybuilding:hasEntryFee 3 ;
+                                    :address "CZSCCCCCCDSV" ;
+                                    :name "SQDW" .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region
+ontologybuilding:Riyadh_region rdf:type owl:NamedIndividual ,
+                                        ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Rose_City_Factory
+ontologybuilding:Rose_City_Factory rdf:type owl:NamedIndividual ,
+                                            :IndustrialPlace .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Rub_al_Khali_desert
+ontologybuilding:Rub_al_Khali_desert rdf:type owl:NamedIndividual ,
+                                              :Desert .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Sahm_Al_Asayel_Equestrian_Stud
+ontologybuilding:Sahm_Al_Asayel_Equestrian_Stud rdf:type owl:NamedIndividual ,
+                                                         ontologybuilding:Horse_riding .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Saqer-Aljazirah_Aviation_Museum
+ontologybuilding:Saqer-Aljazirah_Aviation_Museum rdf:type owl:NamedIndividual ,
+                                                          ontologybuilding:Science ,
+                                                          :museum .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Sarawat_Mountains
+ontologybuilding:Sarawat_Mountains rdf:type owl:NamedIndividual ,
+                                            :Mountainous_area .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Saudi_National_Museum
+ontologybuilding:Saudi_National_Museum rdf:type owl:NamedIndividual ,
+                                                :Historical ,
+                                                :museum .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Scitech_Technology_Center
+ontologybuilding:Scitech_Technology_Center rdf:type owl:NamedIndividual ,
+                                                    ontologybuilding:Science ,
+                                                    :museum .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Senior
+ontologybuilding:Senior rdf:type owl:NamedIndividual ,
+                                 ontologybuilding:tourist .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Sharif_Museum
+ontologybuilding:Sharif_Museum rdf:type owl:NamedIndividual ,
+                                        :Historical ,
+                                        :museum .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Sharm_Abhur
+ontologybuilding:Sharm_Abhur rdf:type owl:NamedIndividual ,
+                                      ontologybuilding:diving_sport ,
+                                      <http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water.> .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Shifa_Mountain
+ontologybuilding:Shifa_Mountain rdf:type owl:NamedIndividual ,
+                                         :Mountainous_area .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Shipwreck_Island
+ontologybuilding:Shipwreck_Island rdf:type owl:NamedIndividual ,
+                                           ontologybuilding:diving_sport ,
+                                           <http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water.> .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Shubra_Palace
+ontologybuilding:Shubra_Palace rdf:type owl:NamedIndividual ,
+                                        ontologybuilding:cultural ,
+                                        :Historical ,
+                                        :museum ;
+                               ontologybuilding:hasActivity ontologybuilding:Cultural_Tour ;
+                               ontologybuilding:located_in ontologybuilding:Al-Qassim_Province ;
+                               ontologybuilding:suitableFor ontologybuilding:FamilyWithKids .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Sol_Resort
+ontologybuilding:Sol_Resort rdf:type owl:NamedIndividual ,
+                                     ontologybuilding:Flyboarding_sport ,
+                                     <http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water.> ,
+                                     :resort .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Tabuk_Castle
+ontologybuilding:Tabuk_Castle rdf:type owl:NamedIndividual ,
+                                       :Historical ,
+                                       :museum .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Tabuk_Province
+ontologybuilding:Tabuk_Province rdf:type owl:NamedIndividual ,
+                                         ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Wadi_Hanifa
+ontologybuilding:Wadi_Hanifa rdf:type owl:NamedIndividual ,
+                                      <http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water.> ,
+                                      :Green_spaces .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Wadi_Laban_Dam
+ontologybuilding:Wadi_Laban_Dam rdf:type owl:NamedIndividual ,
+                                         <http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water.> ,
+                                         :Green_spaces .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Yam_Beach
+ontologybuilding:Yam_Beach rdf:type owl:NamedIndividual ,
+                                    <http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water.> ,
+                                    :Green_spaces .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Yanbu_Beach
+ontologybuilding:Yanbu_Beach rdf:type owl:NamedIndividual ,
+                                      ontologybuilding:diving_sport ,
+                                      <http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water.> .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#YoungAdult
+ontologybuilding:YoungAdult rdf:type owl:NamedIndividual ,
+                                     ontologybuilding:tourist .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#alhijr
+ontologybuilding:alhijr rdf:type owl:NamedIndividual ,
+                                 :Historical .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#alhubi_Souq
+ontologybuilding:alhubi_Souq rdf:type owl:NamedIndividual ,
+                                      :Historical ,
+                                      :Shopping_Mall .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#alnaif
+ontologybuilding:alnaif rdf:type owl:NamedIndividual ,
+                                 ontologybuilding:tourist ;
+                        owl:sameAs ontologybuilding:khalid .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#khalid
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#khalid
+ontologybuilding:khalid rdf:type owl:NamedIndividual ,
+                                 ontologybuilding:tourist ;
+                        ontologybuilding:isprefer ontologybuilding:Al-Bujairi_Park ;
+                        :description_of_the_place "jbkhfdoWJOGJ{owj{ip" ;
+                        :name "albjari street" .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Ḥail_Province
+ontologybuilding:Ḥail_Province rdf:type owl:NamedIndividual ,
+                                        ontologybuilding:regions .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Sumairi_Public_Park_(Green)
+<http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Sumairi_Public_Park_(Green)> rdf:type owl:NamedIndividual ,
+                                                                                                                      :Green_spaces .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Four_Resort_(Ladies_Only)
+<http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Four_Resort_(Ladies_Only)> rdf:type owl:NamedIndividual ,
+                                                                                                                 :resort .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Ithra_(King_Abdulaziz_Center_for_World_Culture)
+<http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Ithra_(King_Abdulaziz_Center_for_World_Culture)> rdf:type owl:NamedIndividual ,
+                                                                                                                                       :museum .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Mada'in_Saleh_(Hegra)
+<http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Mada'in_Saleh_(Hegra)> rdf:type owl:NamedIndividual ,
+                                                                                                             :Historical .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Prophet's_Mosque
+<http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Prophet's_Mosque> rdf:type owl:NamedIndividual ,
+                                                                                                        ontologybuilding:religious .
+
+
+###  http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Rub'_al_Khali
+<http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Rub'_al_Khali> rdf:type owl:NamedIndividual ,
+                                                                                                     :Desert .
+
+
+###  https://book.visitsaudi.com/sa-en/experiences/al-taif/Culture_History/unveil-the-unique-wonders-of-taif
+<https://book.visitsaudi.com/sa-en/experiences/al-taif/Culture_History/unveil-the-unique-wonders-of-taif> rdf:type owl:NamedIndividual ,
+                                                                                                                   ontologybuilding:url ;
+                                                                                                          ontologybuilding:hasURL <https://book.visitsaudi.com/sa-en/experiences/al-taif/Culture_History/unveil-the-unique-wonders-of-taif> .
+
+
+###  https://www.visitsaudi.com/ar/qassim/attractions/al-oqilat-museum-in-qassim
+<https://www.visitsaudi.com/ar/qassim/attractions/al-oqilat-museum-in-qassim> rdf:type owl:NamedIndividual ,
+                                                                                       ontologybuilding:url ;
+                                                                              ontologybuilding:hasURL <https://www.visitsaudi.com/ar/qassim/attractions/al-oqilat-museum-in-qassim> .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

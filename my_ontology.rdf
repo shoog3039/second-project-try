@@ -1,0 +1,2059 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/"
+     xml:base="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontologybuilding="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#event_hasEntryFee -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#event_hasEntryFee">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#fee"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#event_locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#event_locatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#regions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#hasActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#hasActivity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#hasEntryFee -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#hasEntryFee">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#cultural"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#fee"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#hasEventType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#hasEventType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#eventType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#hastime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#hastime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#timeofevent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#isprefer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#isprefer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#located_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#located_in">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#regions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#suitableFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#suitableFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#vistedby -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#vistedby">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#hasEntryFee -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#hasEntryFee">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/address">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasAddress</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/description_of_the_place -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/description_of_the_place">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#cultural"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Adventures"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:label>hasName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/opening_hours_-_closing_hours -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/opening_hours_-_closing_hours">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/placeid -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/placeid">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Forest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Forest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Green_spaces"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Horse_riding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Horse_riding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Sports"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Lakes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Lakes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#NaturalPlace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#NaturalPlace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Rivers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Rivers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Science -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Science">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Seas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Seas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#cultural -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#cultural">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#eventType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#eventType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#fee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#fee"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#regions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#regions"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#religious -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#religious">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#timeofevent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#timeofevent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourist"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Adventures -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Adventures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Arts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Arts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Cosmic_interactions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Cosmic_interactions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Desert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Desert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Extensive_creativity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Extensive_creativity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Green_spaces -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Green_spaces">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/IndustrialPlace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/IndustrialPlace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Mountainous_area -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Mountainous_area">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Shopping_Mall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Shopping_Mall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Sports -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Sports">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/island -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/island">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/museum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/museum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/resort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/resort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Abu_Faramish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Abu_Faramish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Sports"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Diving"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Watersports"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Eastern_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Senior"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Ahsa_Oasis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Ahsa_Oasis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Green_spaces"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#picnicking"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#recreation"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Eastern_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Bahah_Province -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Bahah_Province">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#regions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Bujairi_Park -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Bujairi_Park">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Green_spaces"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/museum"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Cultural_Tour"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#picnicking"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#50_SR"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Fanateer_Corniche -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Fanateer_Corniche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Green_spaces"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Beach_relaxation"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Play_area"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#picnicking"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#recreation"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Eastern_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Jawf_Province -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Jawf_Province">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#regions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Khafs_Meadow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Khafs_Meadow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Desert"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Camping"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Desert_Safari"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Madina_Museum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Madina_Museum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/museum"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#25_SR"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Medina_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Qassim_Province -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Qassim_Province">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#regions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Radf_Park -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Radf_Park">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Green_spaces"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#picnicking"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Sayegh_House_of_the_Arts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Sayegh_House_of_the_Arts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Arts"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Art_exhibitions"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Medina_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Soudah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Soudah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Green_spaces"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#picnicking"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Asir_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Tayebat_Museum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Tayebat_Museum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/museum"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#80_SR"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#AlUla_Old_Town_Village -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#AlUla_Old_Town_Village">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Medina_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Fairouz_Park -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Fairouz_Park">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Green_spaces"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Play_area"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#picnicking"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Medina_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Hada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Hada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Mountainous_area"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Mountain_climbing"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Haram_mosque -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Haram_mosque">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#religious"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Religious_Ritual"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Hob_Souq -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Hob_Souq">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Shopping_Mall"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Shopping"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Eastern_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Masmak_Palace_Museum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Masmak_Palace_Museum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/museum"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Nakheel_Mall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Nakheel_Mall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Shopping_Mall"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Shopping"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Sumayri_Public_Park -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Sumayri_Public_Park">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Green_spaces"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Play_area"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#picnicking"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Medina_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Thumama__Park -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Thumama__Park">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Desert"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Camping"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Desert_Safari"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Waaba_Crater -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al_Waaba_Crater">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Cosmic_interactions"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Cosmic_interactions_observation"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Senior"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Aloqilat_Museum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Aloqilat_Museum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#cultural"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/museum"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Cultural_Tour"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Qassim_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Senior"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Arqana_desert -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Arqana_desert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Desert"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Camping"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Desert_Safari"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Tabuk_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Art_District -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Art_District">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Arts"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Green_spaces"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Art_exhibitions"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#picnicking"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#40SR"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Art_exhibitions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Art_exhibitions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Asir_National_Park -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Asir_National_Park">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Forest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Asir_Province -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Asir_Province">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#regions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Beach_relaxation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Beach_relaxation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Cablo_Equestrian_Club -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Cablo_Equestrian_Club">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Horse_riding"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Sports"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Horse_riding"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#i_don&apos;t_know"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Camping -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Camping">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Concert -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Concert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#eventType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Cosmic_interactions_observation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Cosmic_interactions_observation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Cultural_Events -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Cultural_Events">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#eventType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Cultural_Tour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Cultural_Tour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Dahna_Desert -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Dahna_Desert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Desert"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Camping"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Desert_Safari"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Qassim_Province"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Eastern_Province"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Northern_Borders_Province"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Ḥail_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Dar_Al-Madinah_Museum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Dar_Al-Madinah_Museum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Arts"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/museum"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Art_exhibitions"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#25_SR"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Medina_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Darat_Safeya_Bizagr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Darat_Safeya_Bizagr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Arts"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Art_exhibitions"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#i_don&apos;t_know"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Senior"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Desert_Safari -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Desert_Safari">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Dirab_Golf_Club -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Dirab_Golf_Club">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Sports"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Golf_sport"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#i_don&apos;t_know"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Diriyah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Diriyah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Diving -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Diving">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Eastern_Province -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Eastern_Province">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#regions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Edge_of_the_World -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Edge_of_the_World">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Mountainous_area"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Mountain_climbing"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Entertainment_Shows -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Entertainment_Shows">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#eventType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Exhibition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Exhibition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#eventType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Factory_tours -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Factory_tours">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Farasan_Island -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Farasan_Island">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/island"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Beach_relaxation"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Fishing"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Jazan_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Festivals -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Festivals">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#eventType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Fishing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Fishing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Flyboarding_sport -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Flyboarding_sport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Golf_sport -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Golf_sport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Green_Arts_Park -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Green_Arts_Park">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Green_spaces"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Play_area"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#picnicking"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Hiking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Hiking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Hira_Cultural_District -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Hira_Cultural_District">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/museum"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Horse_riding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Horse_riding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Intercontinental_Palms_Golf_Club -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Intercontinental_Palms_Golf_Club">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Sports"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Golf_sport"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#325_SR"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Ithra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Ithra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#cultural"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/museum"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Cultural_Tour"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Eastern_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Jabal_Al_Leith -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Jabal_Al_Leith">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Sports"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Beach_relaxation"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Diving"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Watersports"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Senior"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Jazan_Province -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Jazan_Province">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#regions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Juman_Park_in_King_Abdullah_Economic_City -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Juman_Park_in_King_Abdullah_Economic_City">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Green_spaces"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Sports"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Golf_sport"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Tennis_sport"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Volleyball_sport"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Watersports"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#basketball_sport"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Khaybar_Fort -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Khaybar_Fort">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Medina_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Khor_Abhur_Beach -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Khor_Abhur_Beach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Beach_relaxation"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Flyboarding_sport"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Watersports"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#recreation"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+        <name>Khor Abhur Beach in South Abhur in Jeddah</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Khuraim_Meadow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Khuraim_Meadow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Desert"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Green_spaces"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Camping"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Desert_Safari"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#picnicking"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#King_Abdulaziz_Historical_Center -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#King_Abdulaziz_Historical_Center">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/museum"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Madain_Saleh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Madain_Saleh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Medina_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#regions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Mastodon_Cave -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Mastodon_Cave">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Eastern_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Medina_Province -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Medina_Province">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#regions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Mountain_climbing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Mountain_climbing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour"/>
+        <ontologybuilding:hasEntryFee rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</ontologybuilding:hasEntryFee>
+        <address>lkhsajgoj</address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Nafud_Desert -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Nafud_Desert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Desert"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Camping"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Desert_Safari"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Jawf_Province"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Northern_Borders_Province"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Tabuk_Province"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Ḥail_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Naila_Art_Gallery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Naila_Art_Gallery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Arts"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Art_exhibitions"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#i_don&apos;t_know"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Senior"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Najran_Province -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Najran_Province">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#regions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Namar_Dam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Namar_Dam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Green_spaces"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#picnicking"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#recreation"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Nassif_House_Museum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Nassif_House_Museum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/museum"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Night_Souq -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Night_Souq">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Shopping_Mall"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Shopping"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Northern_Borders_Province -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Northern_Borders_Province">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#regions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Noura_Meadow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Noura_Meadow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Desert"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Green_spaces"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Camping"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Desert_Safari"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#picnicking"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Nova_Resort -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Nova_Resort">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/resort"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Spa_and_relaxation"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#1000_SR"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Play_area -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Play_area">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Praya_Beach -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Praya_Beach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Beach_relaxation"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Flyboarding_sport"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Watersports"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#recreation"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Prophet_Mosque -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Prophet_Mosque">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#religious"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Religious_Ritual"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Medina_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Qaisariah_Souq -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Qaisariah_Souq">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Shopping_Mall"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Shopping"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Eastern_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Qara_Mountain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Qara_Mountain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Mountainous_area"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Mountain_climbing"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Eastern_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#ReligiousEvent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#ReligiousEvent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#eventType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Religious_Ritual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Religious_Ritual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Rijal_Almaa_Museum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Rijal_Almaa_Museum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#cultural"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Arts"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/museum"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Art_exhibitions"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Cultural_Tour"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#20_SR"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Asir_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+        <ontologybuilding:hasEntryFee rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</ontologybuilding:hasEntryFee>
+        <address>CZSCCCCCCDSV</address>
+        <name>SQDW</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_Season -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_Season">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#event"/>
+        <ontologybuilding:event_hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#50_SR"/>
+        <ontologybuilding:event_locatedIn rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:hastime rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#12_oct_2024-1_may_2025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#regions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Rose_City_Factory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Rose_City_Factory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/IndustrialPlace"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Factory_tours"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#10_SR"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Rub_al_Khali -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Rub_al_Khali">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Desert"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Camping"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Desert_Safari"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Eastern_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Sahm_Al_Asayel_Equestrian_Stud -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Sahm_Al_Asayel_Equestrian_Stud">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Horse_riding"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Sports"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Horse_riding"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#i_don&apos;t_know"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Saqer-Aljazirah_Aviation_Museum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Saqer-Aljazirah_Aviation_Museum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Science"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/museum"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Science_exhibitions"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#10_SR"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Sarawat_Mountains -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Sarawat_Mountains">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Mountainous_area"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Mountain_climbing"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Bahah_Province"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Asir_Province"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Jazan_Province"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Najran_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Saudi_National_Museum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Saudi_National_Museum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/museum"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#10_SR"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Science_exhibitions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Science_exhibitions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Scitech_Technology_Center -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Scitech_Technology_Center">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Science"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/museum"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Science_exhibitions"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#20_SR"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Eastern_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Senior -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Senior">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Sharif_Museum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Sharif_Museum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/museum"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#20_SR"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Sharm_Abhur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Sharm_Abhur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Sports"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Beach_relaxation"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Diving"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Watersports"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Senior"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Shifa_Mountain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Shifa_Mountain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Mountainous_area"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Mountain_climbing"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Shipwreck_Island -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Shipwreck_Island">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Sports"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Diving"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Watersports"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Tabuk_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Senior"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Shopping -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Shopping">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Shubra_Palace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Shubra_Palace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#cultural"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/museum"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Cultural_Tour"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#25_SR"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Al-Qassim_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Sol_Resort -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Sol_Resort">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/resort"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Beach_relaxation"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Flyboarding_sport"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Spa_and_relaxation"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#recreation"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#i_don&apos;t_know"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Spa_and_relaxation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Spa_and_relaxation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#SportsEvent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#SportsEvent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#eventType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Tabuk_Castle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Tabuk_Castle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/museum"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#MuseumTour"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Tabuk_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Tabuk_Province -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Tabuk_Province">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#regions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Tennis_sport -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Tennis_sport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Thee_Ain_Historical_Village -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Thee_Ain_Historical_Village">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Historical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Mountainous_area"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Heritage_tours"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Asir_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Volleyball_sport -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Volleyball_sport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Wadi_Al_Disah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Wadi_Al_Disah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Mountainous_area"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Mountain_climbing"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Tabuk_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Wadi_Hanifa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Wadi_Hanifa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Green_spaces"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#picnicking"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#recreation"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Wadi_Laban_Dam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Wadi_Laban_Dam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Green_spaces"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#picnicking"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#recreation"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Watersports -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Watersports">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Yam_Beach -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Yam_Beach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Green_spaces"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Beach_relaxation"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#picnicking"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#recreation"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Makkah_Region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Yanbu_Beach -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Yanbu_Beach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Sports"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Beach_relaxation"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Diving"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Watersports"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#recreation"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Medina_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Yellow_Lake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Yellow_Lake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Bodies_of_Water"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#picnicking"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#recreation"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Eastern_Province"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#FamilyWithKids"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#basketball_sport -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#basketball_sport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#no_fee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#fee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#picnicking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#picnicking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#recreation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#recreation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Ḥail_Province -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Ḥail_Province">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#regions"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Ḥail_Province"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#10_SR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#10_SR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#fee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#1000_SR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#1000_SR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#fee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#12_oct_2024-1_may_2025 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#12_oct_2024-1_may_2025">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#timeofevent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#15_SR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#15_SR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#fee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#1500_SR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#1500_SR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#fee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#20_SR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#20_SR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#fee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#25_SR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#25_SR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#fee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#325_SR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#325_SR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#fee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#40SR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#40SR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#fee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#50_SR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#50_SR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#fee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#80_SR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#80_SR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#fee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#For_Resort_(Ladies_Only) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#For_Resort_(Ladies_Only)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/resort"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Spa_and_relaxation"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#i_don&apos;t_know"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Senior"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Lift_Studio_&amp;_Space -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Lift_Studio_&amp;_Space">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Arts"/>
+        <ontologybuilding:hasActivity rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Art_exhibitions"/>
+        <ontologybuilding:hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#i_don&apos;t_know"/>
+        <ontologybuilding:located_in rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:suitableFor rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Senior"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#i_don&apos;t_know -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#i_don&apos;t_know">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#fee"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#hasEntryFee">
+        <rdfs:label>hasEntryFee</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

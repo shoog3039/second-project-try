@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container" style="
+            align-items: center;">
+    <h2>Plan Your Trip</h2>
+    <form action="/subscriber" method="POST">
+        <div class="mb-3">
+            <label for="tourism_places" class="form-label">what is your favourite place among given options</label>
+            <select class="form-select" name="tourism_places" required>
+                <option value="Adventures">Adventures</option>
+                <option value="Art">Art</option>
+                <option value="Bodies_of_Water">Bodies_of_Water</option>
+                <option value="Cosmic_interactions">Cosmic_interactions</option>
+                <option value="cultural">cultural</option>
+                <option value="Desert">Desert</option>
+                <option value="Extensive_creativity">Extensive_creativity</option>
+                <option value="Green_spaces">Green_spaces</option>
+                <option value="Historical">Historical</option>
+                <option value="IndustrialPlace">IndustrialPlace</option>
+                <option value="island">island</option>
+                <option value="Mountainous_area">Mountainous_area</option>
+                <option value="museum">museum</option>
+                <option value="religious">religious</option>
+                <option value="resort">resort</option>
+                <option value="Science">Science</option>
+                <option value="Shopping_Mall">Shopping_Mall</option>
+                <option value="SportsComplex">SportsComplex</option>
+            </select>
+        <div class="mb-3">
+            <label for="Activity" class="form-label">Choose an Activity</label>
+            <select class="form-select" name="Activity" required>
+                <option value="Art_exhibitions">Art_exhibitions</option>
+                <option value="basketball_sport">basketball_sport </option>
+                <option value="Beach_relaxation"> Beach_relaxation</option>
+                <option value="Camping">Camping</option>
+                <option value="Cosmic_interactions_observation">Cosmic_interactions_observation</option>
+                <option value="Cultural_Tour">Cultural_Tour</option>
+                <option value="Desert_Safari">Desert_Safari</option>
+                <option value="Diving">Diving</option>
+                <option value="Factory_tours">Factory_tours</option>
+                <option value="Flyboarding_sport">Flyboarding_sport</option>
+                <option value="Golf_sport">Golf_sport</option>
+                <option value="Heritage_tours">Heritage_tours</option>
+                <option value="Hiking">Hiking</option>
+                <option value="Horse_riding"> Horse_riding</option>
+                <option value="MuseumTour">Museum Tour</option>
+                <option value="picnicking">picnicking</option>
+                <option value="Play_area">Play_area</option>
+                <option value="recreation">recreation</option>
+                <option value="Religious_Ritual">Religious_Ritual</option>
+                <option value="Science_exhibitions">Science_exhibitions</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Spa_and_relaxation">Spa_and_relaxation</option>
+                <option value="Tennis_sport">Tennis_sport</option>
+                <option value="Volleyball_sport">Volleyball_sport</option>
+                <option value="Watersports">Watersports</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="regions" class="form-label">Choose a Region</label>
+            <select class="form-select" name="regions" required>
+                <option value="Al-Bahah_Province">Al-Bahah_Province</option>
+                <option value="Al-Jawf_Province">Al-Jawf_Province</option>
+                <option value="Al-Qassim_Province"> Al-Qassim_Province</option>
+                <option value="Asir_Province">Asir_Province</option>
+                <option value="Eastern_Province">Eastern_Province</option>
+                <option value="Jazan_Province">Jazan_Province</option>
+                <option value="Makkah_Region">Makkah_Region</option>
+                <option value="Medina_Province">Medina_Province</option>
+                <option value="Najran_Province">Najran_Province</option>
+                <option value="Northern_Borders_Province">Northern_Borders_Province</option>
+                <option value="Riyadh_region">Riyadh_region</option>
+                <option value="Tabuk_Province">Tabuk_Province</option>
+                <option value="Ḥail_Province">Ḥail_Province</option>
+            </select>
+        </div>
+
+    
+
+        
+        <button type="submit" class="btn btn-primary">Get Recommendations</button>
+    </form>
+</div>
+{% endblock %}
