@@ -131,6 +131,8 @@
     <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#hasEntryFee -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#hasEntryFee">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
@@ -139,6 +141,7 @@
     <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/address -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/address">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#event"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>hasAddress</rdfs:label>
@@ -149,6 +152,7 @@
     <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/description_of_the_place -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/description_of_the_place">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#event"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
     </owl:DatatypeProperty>
@@ -158,9 +162,8 @@
     <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/name -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/name">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#cultural"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#event"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/Adventures"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label>hasName</rdfs:label>
     </owl:DatatypeProperty>
@@ -170,6 +173,7 @@
     <!-- http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/opening_hours_-_closing_hours -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding/opening_hours_-_closing_hours">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#event"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#tourism_places"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
@@ -1501,6 +1505,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#event"/>
         <ontologybuilding:event_hasEntryFee rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#50_SR"/>
         <ontologybuilding:event_locatedIn rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Riyadh_region"/>
+        <ontologybuilding:hasEventType rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#Cultural_Events"/>
         <ontologybuilding:hastime rdf:resource="http://www.semanticweb.org/shoogaldosari/ontologies/2024/4/ontologybuilding#12_oct_2024-1_may_2025"/>
     </owl:NamedIndividual>
     
